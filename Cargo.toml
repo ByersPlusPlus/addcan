@@ -1,0 +1,13 @@
+[package]
+name = "addcan_command"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+bpp-command-api = { git = "https://github.com/ByersPlusPlus/bpp-command-api", tag = "v0.2.0-1" }
+tokio = { version = "1.10.1", features = ["macros", "rt-multi-thread", "sync"] }
+async-trait = "0.1.51"
+tonic = "0.5.2"
